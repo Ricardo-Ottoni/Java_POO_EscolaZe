@@ -35,9 +35,9 @@ public class ConnectionFactory {
     try {
         Connection c = getConnection();
         System.out.println("connectou");
-    } catch (ClassNotFoundException | SQLException e){
-        System.out.println("ERRO);
-    }
+        } catch (ClassNotFoundException | SQLException e){
+            System.out.println("ERRO);
+        }
 
         //System.out.println(c.getCatalog());
 
