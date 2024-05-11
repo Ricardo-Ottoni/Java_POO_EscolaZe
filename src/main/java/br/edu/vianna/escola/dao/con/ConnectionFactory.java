@@ -32,10 +32,13 @@ public class ConnectionFactory {
     }
 
     public static void main(String[] args) {
-
+    try {
         Connection c = getConnection();
-
         System.out.println("connectou");
+    } catch (ClassNotFoundException | SQLException e){
+        System.out.println("ERRO);
+    }
+
         //System.out.println(c.getCatalog());
 
     }
